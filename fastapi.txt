@@ -1,0 +1,16 @@
+pip install fastapi 
+---------------------------------
+pip install uvicorn - this Run server
+----------------------------------
+server Start  :uvicorn filename:createapp --reload
+ Example :
+    if create main.py 
+    create instance of fastapi app=FastAPI()
+    like this 
+    uvicorn main:app --reload 
+--reload flag is automatically reload when change main file related any files 
+---------------------------------
+create Path
+@app.get("/")
+def index():
+  return "Helloword"
