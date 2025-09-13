@@ -14,3 +14,7 @@ create Path
 @app.get("/")
 def index():
   return "Helloword"
+get-> is Operation 
+/-> path
+index-> POF(path Operation function)
+-----------------------------------

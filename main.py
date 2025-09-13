@@ -3,10 +3,10 @@ from fastapi import FastAPI
 
 
 # This Create App
-app=FastAPI()
+app=FastAPI(title="basic")
 
 # Routers
-@app.get("/")
+@app.get("/") #BasePath
 def index():
     return "Hello World"
 @app.get("/return_json")
