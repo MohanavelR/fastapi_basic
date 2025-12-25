@@ -17,4 +17,22 @@ def index():
 get-> is Operation 
 /-> path
 index-> POF(path Operation function)
+@app -> (POD) path Operation decorator
 -----------------------------------
+Parameter
+@app.get("/param/{name}")
+def param(name):
+    return {"data":f"Your Params is {name}"}
+{} -> this Parameter
+must be function arg name = Parameter give name 
+also use this like
+@app.get("/param/{name}/names")    
+and you can set dataType 
+def param(id:int) like this 
+give Parameter string type throw the Error
+--------------------------------------------
+query Parameter 
+query Parameter also access Parameter
+missing query Parameter not throw not found Error
+this not change path if missing query throw missingerror 
+----------------------------------------
